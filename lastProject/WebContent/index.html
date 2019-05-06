@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width" initial-scale ="1">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<title>Insert title here</title>
+<style type="text/css">
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+</style>
+</head>
+<body>
+<header>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+
+<!--  Show this only on mobile to medium screens  -->
+  <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!--  Use flexbox utility classes to change how the child elements are justified  -->
+  <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class='fas fa-align-justify' style="color:#2196F3"></i></a>
+      	<div class ="dropdown-menu">
+      		<a class="dropdown-item" href="#">민물낚시</a>
+      		<a class="dropdown-item" href="#">바다낚시</a>
+      		<a class="dropdown-item" href="#">조황게시판</a>
+      	</div>
+      </li>
+    </ul>
+<!--   Show this only lg screens and up   -->
+    <a class="navbar-brand d-none d-lg-block" href="#" style="color:#2196F3">SHIP GO</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#2196F3">로그인</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#2196F3">회원가입</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+<!-- 해더부분끝 -->
+		<div class="col-md-12 no-padding" id="EventBanner" style="padding-left: 0px; padding-right:0px;">
+		  <div class="swiper-container swiper-container-horizontal">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><img src="Images/test.jpeg"></div>
+		      <div class="swiper-slide"><img src="Images/test2.jpeg"></div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
+		  </div>
+		</div>
+
+
+<script src="swiper/js/swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<script src="jquery/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script> <!-- Menu Toggle Script -->
+
+</body>
+</html>
